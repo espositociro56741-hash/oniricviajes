@@ -4,12 +4,12 @@ import React from "react";
 
 export default function Page() {
   return (
-    <main className="px-6 py-12 max-w-5xl mx-auto space-y-16">
+    <main className="px-6 py-12 max-w-5xl mx-auto space-y-12">
       {/* Hero Section */}
       <section className="text-center space-y-4">
-        <h1 className="text-5xl font-bold">Oniric Viajes</h1>
+        <h1 className="text-5xl font-bold">Oniric Viajes & Arte</h1>
         <p className="text-lg text-gray-600">
-          Viajes que exploran cultura, arte, arquitectura y diseño.
+          Viajes que exploran cultura, arte y diseño en cada destino.
         </p>
       </section>
 
@@ -17,40 +17,42 @@ export default function Page() {
       <section className="space-y-2">
         <h2 className="text-3xl font-semibold">Quién soy</h2>
         <p className="text-gray-700">
-          Soy un apasionado de los viajes con un enfoque en descubrir la riqueza cultural,
+          Soy un apasionado de los viajes con un enfoque en la riqueza
           arquitectónica y artística de cada destino.
         </p>
       </section>
 
-      {/* Próximos Viajes */}
-      <section className="space-y-4">
+      {/* Próximos viajes */}
+      <section className="space-y-2">
         <h2 className="text-3xl font-semibold">Próximos viajes</h2>
-        <ul className="list-disc pl-6 text-gray-700">
-          <li>Roma y Florencia – Arte renacentista y arquitectura</li>
-          <li>Tokio – Diseño urbano y cultura contemporánea</li>
-          <li>Ciudad de México – Arte prehispánico y modernismo</li>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Barcelona – Explorando Gaudí y el modernismo</li>
+          <li>Roma – Arte clásico y renacentista</li>
+          <li>Kioto – Tradición y espiritualidad</li>
         </ul>
       </section>
 
       {/* Testimonios */}
-      <section className="space-y-4">
+      <section className="space-y-2">
         <h2 className="text-3xl font-semibold">Testimonios</h2>
-        <blockquote className="border-l-4 border-gray-400 pl-4 italic text-gray-600">
-          “Una experiencia inolvidable, llena de aprendizajes culturales.” – Ana P.
-        </blockquote>
-        <blockquote className="border-l-4 border-gray-400 pl-4 italic text-gray-600">
-          “El viaje estuvo perfectamente organizado, con un enfoque único en arte y diseño.” – Juan M.
+        <blockquote className="italic text-gray-600">
+          "Un viaje único, lleno de inspiración artística." – Ana
         </blockquote>
       </section>
 
       {/* Contacto */}
       <section className="space-y-2">
         <h2 className="text-3xl font-semibold">Contacto</h2>
-        <p className="text-gray-700">
-          Si querés sumarte a un próximo viaje o tenés dudas, escribime:
+        <p>
+          Escribime a:{" "}
+          <a
+            href="mailto:hola@oniric.viajes"
+            className="text-blue-600 underline"
+          >
+            hola@oniric.viajes
+          </a>
         </p>
-        <a
-          href="mailto:hola@oniric.viajes"
-          className="text-blue-600 underline"
-        >
-          hola@oniric.viajes
+      </section>
+    </main>
+  );
+}
